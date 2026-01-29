@@ -1,2 +1,9 @@
-# social-media-post-prototype
-A React-based social media post creator and feed prototype with reusable components, state management, and API integration.
+# Social Media Post Builder & Feed Prototype
+
+A React-based mini project that allows users to create posts and view a social media-style feed.
+Uses JSONPlaceholder API to simulate backend data.
+
+Technologies:
+- React
+- HTML, CSS, JavaScript
+- JSONPlaceholder API
