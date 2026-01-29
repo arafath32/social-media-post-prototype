@@ -1,0 +1,234 @@
+/* index.css */
+/* Global Styles – The Interactor: Social Post Prototype */
+/* LO2: Design and UI Principles (clear layout, reusable visuals) */
+
+:root {
+  --blue: #3b7ddd;
+  --muted: #666;
+  --card-bg: #fff;
+  --page-bg: #f3f4f6;
+}
+
+body {
+  margin: 0;
+  font-family: "Inter", Arial, sans-serif;
+  background: var(--page-bg);
+  color: #111;
+}
+
+/* Navbar */
+.nav {
+  background: var(--blue);
+  color: white;
+  padding: 14px 0;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.08);
+}
+
+.nav-inner {
+  width: 90%;
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.links a {
+  color: white;
+  margin-left: 16px;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.links a:hover {
+  text-decoration: underline;
+}
+
+/* Layout */
+.container {
+  width: 90%;
+  max-width: 900px;
+  margin: 20px auto;
+}
+
+/* Card Component */
+.card {
+  background: var(--card-bg);
+  padding: 18px;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.06);
+  margin-bottom: 18px;
+}
+
+/* Buttons */
+.btn {
+  background: var(--blue);
+  color: white;
+  border: none;
+  padding: 10px 16px;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.btn:hover {
+  background: #2e63b9;
+}
+
+.btn-outline {
+  background: white;
+  border: 2px solid var(--blue);
+  color: var(--blue);
+  padding: 8px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-right: 6px;
+  transition: 0.2s ease;
+}
+
+.btn-outline:hover {
+  background: var(--blue);
+  color: white;
+}
+
+/* Posts */
+.post {
+  border-bottom: 1px solid #eee;
+  padding: 12px 0;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 6px;
+}
+
+.avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  background: #d9e3ff;
+  margin-right: 10px;
+}
+
+.post-meta {
+  display: flex;
+  flex-direction: column;
+}
+
+.timestamp {
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.caption {
+  font-size: 15px;
+  margin: 8px 0;
+}
+
+/* Image Preview */
+.preview,
+.post-image {
+  width: 100%;
+  max-width: 400px;
+  border-radius: 6px;
+  margin: 10px 0;
+}
+
+/* Comment Box */
+.comment-box {
+  display: flex;
+  margin-top: 8px;
+}
+
+.comment-box input {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.send {
+  background: var(--blue);
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.comment {
+  background: #f9fafb;
+  padding: 6px;
+  border-radius: 6px;
+  margin-top: 6px;
+}
+
+/* ====== Post Creator Section Styling ====== */
+.post-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  background-color: #f5f6f8;
+}
+
+.post-card {
+  background: white;
+  width: 500px;
+  padding: 25px 30px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.post-title {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.post-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.post-textarea {
+  resize: none;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  font-size: 15px;
+}
+
+.post-file {
+  border: none;
+}
+
+.post-preview {
+  width: 100%;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.post-button {
+  align-self: center;
+  width: 100px;
+  padding: 8px 0;
+  border: none;
+  border-radius: 6px;
+  background-color: #1976d2;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.post-button:hover {
+  background-color: #135ca1;
+}
